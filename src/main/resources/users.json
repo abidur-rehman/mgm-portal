@@ -1,0 +1,24 @@
+{
+  "user" : {
+    "password" : "user",
+    "username" : "john.smith",
+    "id" : 1,
+    "staffNumber" : 1111111,
+    "authorities" : null,
+    "accountNonExpired" : true,
+    "accountNonLocked" : true,
+    "credentialsNonExpired" : true,
+    "enabled" : true
+  },
+  "admin" : {
+    "password" : "admin",
+    "username" : "jane.doe",
+    "id" : 2,
+    "staffNumber" : 22222222,
+    "authorities" : null,
+    "accountNonExpired" : true,
+    "accountNonLocked" : true,
+    "credentialsNonExpired" : true,
+    "enabled" : true
+  }
+}
