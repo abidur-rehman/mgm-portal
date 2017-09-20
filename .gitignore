@@ -21,4 +21,13 @@ build/
 nbbuild/
 dist/
 nbdist/
-.nb-gradle/
+npm-debug.log
+yarn.lock
+/.idea/
+/.nyc_output/
+/node_modules/
+.nyc_output
+/src/main/resources/static/built/
+/target/
+/coverage/
+*.pid
