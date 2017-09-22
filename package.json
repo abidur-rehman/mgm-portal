@@ -1,30 +1,96 @@
 {
   "name": "mgm-solution",
   "version": "1.0.0",
-  "description": "Mgm Solution",
-  "main": "index.js",
-  "scripts": {
-    "dev": "webpack -d --watch",
-    "build": "webpack -p"
+  "description": "A web application for Mgm Solution that is based on Spring REST and React JS",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abidur-rehman/mgm-solution.git"
   },
+  "keywords": [
+    "rest",
+    "spring",
+    "react"
+  ],
   "author": "Abid Ur-Rehman",
-  "license": "ISC",
-  "dependencies": {
-    "babel-core": "^6.24.1",
-    "babel-loader": "^7.0.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "bootstrap": "^3.3.7",
-    "copy-webpack-plugin": "^4.0.1",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "webpack": "^2.5.1"
+  "scripts": {
+    "clean-dirs": "rimraf .nyc_output coverage src/main/resources/static/built",
+    "build": "webpack",
+    "build:production": "NODE_ENV=production webpack --optimize-minimize",
+    "test": "yarn coverage -- --config .jest.json",
+    "coverage": "standard && jest --coverage",
+    "watch": "webpack --watch -d"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "jest": {
+    "verbose": false,
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "testMatch": [
+      "**/src/test/js/**/*-test.js"
+    ],
+    "coverageDirectory": "coverage",
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    }
   },
   "devDependencies": {
-    "eslint": "^3.19.0",
-    "eslint-config-standard": "^10.0.0",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^2.2.0",
-    "extract-text-webpack-plugin": "^2.1.0"
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.0",
+    "babel-eslint": "^7.2.1",
+    "babel-jest": "^19.0.0",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-airbnb": "^2.2.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.23.0",
+    "babel-register": "^6.24.0",
+    "bootstrap": "^4.0.0-beta",
+    "chai": "^3.5.0",
+    "circular-json": "^0.3.3",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.0",
+    "enzyme": "^2.8.0",
+    "expect": "^1.20.2",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "jest": "^19.0.2",
+    "jquery": "^3.2.1",
+    "jsdom": "^9.12.0",
+    "mocha": "^3.2.0",
+    "nock": "^9.0.14",
+    "node-sass": "^4.5.2",
+    "react": "^15.5.4",
+    "react-addons-test-utils": "^15.4.2",
+    "react-bootstrap": "^0.30.8",
+    "react-dnd": "^2.4.0",
+    "react-dnd-html5-backend": "^2.4.1",
+    "react-dnd-test-backend": "^2.4.0",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-mock-store": "^1.2.3",
+    "redux-persist": "^4.8.3",
+    "redux-promise-middleware": "^4.3.0",
+    "redux-thunk": "^2.2.0",
+    "resolve-url-loader": "^2.0.2",
+    "rimraf": "^2.6.1",
+    "sass-loader": "^6.0.3",
+    "sinon": "^2.1.0",
+    "standard": "^10.0.2",
+    "style-loader": "^0.16.1",
+    "toastr": "^2.1.2",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.4.1"
   }
 }
