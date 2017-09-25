@@ -13,3 +13,4 @@ yarn.lock
 /target/
 /coverage/
 *.pid
+/fonts/

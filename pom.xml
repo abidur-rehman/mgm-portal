@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>uk.gov.dwp.myservices</groupId>
-    <artifactId>myservices-portal</artifactId>
+    <groupId>mgm-solution</groupId>
+    <artifactId>mgm-solution</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>MyServices Portal</name>
-    <description>A web portal application for MyServices that is based on Spring REST and React JS</description>
+    <name>MGM Solution</name>
+    <description>mgm-solution</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

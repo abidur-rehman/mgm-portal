@@ -1,4 +1,6 @@
 $bootstrap-sass-asset-helper: true;
+$fa-font-path: "~font-awesome/fonts/";
+@import "~font-awesome/scss/font-awesome";
 @import "~bootstrap/scss/bootstrap";
 @import 'components/login';
 
