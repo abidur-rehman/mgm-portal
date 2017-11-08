@@ -1,4 +1,4 @@
-package uk.mgm.co.controller;
+package uk.co.itsolutions.portal.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

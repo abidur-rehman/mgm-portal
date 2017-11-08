@@ -1,9 +1,9 @@
-package uk.mgm.co.service;
+package uk.co.itsolutions.portal.service;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import uk.mgm.co.dto.AuthenticatedUser;
-import uk.mgm.co.dto.AuthenticatedUserDetails;
+import uk.co.itsolutions.portal.dto.AuthenticatedUser;
+import uk.co.itsolutions.portal.dto.AuthenticatedUserDetails;
 
 import java.io.IOException;
 import java.net.URL;

@@ -1,4 +1,4 @@
-package uk.mgm.co.config;
+package uk.co.itsolutions.portal.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;

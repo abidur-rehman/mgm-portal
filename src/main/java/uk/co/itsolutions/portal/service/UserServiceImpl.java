@@ -1,18 +1,17 @@
-package uk.mgm.co.service;
+package uk.co.itsolutions.portal.service;
 
-import uk.mgm.co.dto.AuthenticatedUser;
-import uk.mgm.co.dto.AuthenticatedUserDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import uk.co.itsolutions.portal.dto.AuthenticatedUser;
+import uk.co.itsolutions.portal.dto.AuthenticatedUserDetails;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Map;
-import java.util.regex.Pattern;
 
 /**
  * Created by DWP on 26/04/2017.
